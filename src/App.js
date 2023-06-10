@@ -14,7 +14,7 @@ const App = () => {
   const addTaskHandler = (inputText) => {
     setTasks((prevTasks) => {
       const updatedTasks = [...prevTasks];
-      updatedTasks.unshift({ text: inputText, id: 'task1' });
+      updatedTasks.unshift({ text: inputText, id: "task1" });
       return updatedTasks;
     });
   };
@@ -35,12 +35,12 @@ const App = () => {
   }
 
   return (
-   
+    <>
       <section id="task-form">
         <TaskInput onAddTask={addTaskHandler} />
       </section>
       <section id="tasks">{content}</section>
-   
+    </>
   );
 };
 
